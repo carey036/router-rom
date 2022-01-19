@@ -72,6 +72,7 @@ jobs:
     - name: 准备编译环境
       if: true
       run: | 
+        apt-get update
         sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
         fakeroot kmod cpio git python3-docutils gettext automake autopoint \
         texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
